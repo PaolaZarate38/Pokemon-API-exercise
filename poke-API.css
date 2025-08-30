@@ -1,0 +1,39 @@
+* { box-sizing: border-box; }
+
+body{
+    margin: 0;              
+    height: 100vh;          
+    display: flex;          
+    background-color: darkgoldenrod;
+    gap: 8px;
+    padding: 8px
+}
+
+.pokemon-selector{
+    background-color: lightgreen;
+    width: 220px;           
+    padding: 8px;
+  
+}
+
+.pokemon-container{
+    flex: 1;                
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+    padding: 16px;
+    background-color: darkcyan;  
+    overflow: auto;  
+    row-gap: 36px;            
+}
+
+.pokemon-card{
+    background-color: powderblue;
+    color: white;
+    border-radius: 8px;
+    padding: 12px;
+    min-height: 120px;      
+    display: grid;
+    place-items: center;
+}
+
